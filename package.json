@@ -1,0 +1,18 @@
+{
+  "name": "rn-nepal-payment",
+  "version": "0.0.1",
+  "description": "React Native component to add nepalese payment like esewa, khalti, etc in your app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rn-nepal-payment"
+  ],
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react-native-webview": "^11.6.6"
+  },
+  "author": "Suman Gauchan",
+  "license": "ISC"
+}
