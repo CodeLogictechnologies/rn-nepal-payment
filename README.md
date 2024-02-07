@@ -1,6 +1,6 @@
-# rn-all-nepal-payment
+# rn-nepal-payment
 
-![rnAllNepalPayment](https://user-images.githubusercontent.com/30138390/128639942-40b2dbc6-6184-48a9-a575-7fb360eb0b8d.jpg)
+![rnNepalPayment](https://user-images.githubusercontent.com/30138390/128639942-40b2dbc6-6184-48a9-a575-7fb360eb0b8d.jpg)
 React-native wrapper which includes all the major payment solutions in Nepal. This package implements the services in a webview in a [Modal](https://github.com/react-native-webview/react-native-webview).
 
 ## Installation
@@ -8,7 +8,7 @@ React-native wrapper which includes all the major payment solutions in Nepal. Th
 ```sh
 npm install --save prop-types  // if you have not already
 npm install --save react-native-webview  // if you have not already
-npm install rn-all-nepal-payment
+npm install rn-nepal-payment
 ```
 
 or
@@ -16,7 +16,7 @@ or
 ```sh
 yarn add prop-types  // if you have not already
 yarn add react-native-webview  // if you have not already
-yarn add rn-all-nepal-payment
+yarn add rn-nepal-payment
 ```
 
 # Usage
@@ -27,7 +27,7 @@ yarn add rn-all-nepal-payment
 import React from 'react';
 import { Button, Text, SafeAreaView } from 'react-native';
 
-import { CipsSdk } from 'rn-all-nepal-payment';
+import { CipsSdk } from 'rn-nepal-payment';
 
 const CIPSExample = () => {
   const [isVisible, setisVisible] = React.useState(false);
@@ -95,7 +95,7 @@ export default CIPSExample;
 import React from 'react';
 import { Button, Text, SafeAreaView } from 'react-native';
 
-import { EsewaSdk } from 'rn-all-nepal-payment';
+import { EsewaSdk } from 'rn-nepal-payment';
 
 const EsewaExample = () => {
   const [isVisible, setisVisible] = React.useState(false);
@@ -147,7 +147,7 @@ For more information please visit [here](https://developer.esewa.com.np/#/epay).
 import React from 'react';
 import { Button, SafeAreaView } from 'react-native';
 
-import { KhatiSdk } from 'rn-all-nepal-payment';
+import { KhatiSdk } from 'rn-nepal-payment';
 
 const KhaltiExample = () => {
   const [isVisible, setIsVisible] = React.useState(false);

@@ -13,6 +13,10 @@
     "prop-types": "^15.7.2",
     "react-native-webview": "^11.6.6"
   },
-  "author": "Suman Gauchan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeLogictechnologies/rn-nepal-payment.git"
+  },
+  "author": "Code Logic <codelogictechnologies@gmail.com> (https://cltech.com.np/)",
   "license": "ISC"
 }
