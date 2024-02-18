@@ -1,22 +1,55 @@
 {
   "name": "rn-nepal-payment",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "React Native component to add nepalese payment like esewa, khalti, etc in your app.",
-  "main": "index.js",
+  "main": "lib\\commonjs\\index.js",
+  "types": "lib\\typescript\\src\\index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc --project ./tsconfig.json",
+    "pub": "npm version patch && npm publish",
+    "lint": "tslint --fix -p ./tsconfig.json",
+    "prepare": "bob build"
   },
   "keywords": [
     "rn-nepal-payment"
   ],
   "peerDependencies": {
-    "prop-types": "^15.7.2",
-    "react-native-webview": "^11.6.6"
+    "react": ">=18.0.0",
+    "react-native": ">=0.73.0",
+    "react-native-webview": ">=11.6.6"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/CodeLogictechnologies/rn-nepal-payment.git"
   },
   "author": "Code Logic <codelogictechnologies@gmail.com> (https://cltech.com.np/)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.56",
+    "react-native-builder-bob": "^0.23.2",
+    "typescript": "^5.1.3"
+  },
+  "react-native": "src\\index.ts",
+  "source": "src\\index.ts",
+  "module": "lib\\module\\index.js",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }
